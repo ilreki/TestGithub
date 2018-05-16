@@ -16,5 +16,10 @@ namespace TestGithub
         {
             InitializeComponent();
         }
+
+        private void buttonRegiste_Click(object sender, EventArgs e)
+        {
+            new Form2().Show();
+        }
     }
 }

@@ -28,13 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.buttonRegiste = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // buttonRegiste
+            // 
+            this.buttonRegiste.Location = new System.Drawing.Point(345, 366);
+            this.buttonRegiste.Name = "buttonRegiste";
+            this.buttonRegiste.Size = new System.Drawing.Size(75, 30);
+            this.buttonRegiste.TabIndex = 0;
+            this.buttonRegiste.Text = "注册";
+            this.buttonRegiste.UseVisualStyleBackColor = true;
+            this.buttonRegiste.Click += new System.EventHandler(this.buttonRegiste_Click);
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonRegiste);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button buttonRegiste;
     }
 }
 

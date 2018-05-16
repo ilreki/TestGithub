@@ -16,5 +16,10 @@ namespace TestGithub
         {
             InitializeComponent();
         }
+
+        private void buttonOK_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

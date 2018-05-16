@@ -28,12 +28,33 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.buttonOK = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // buttonOK
+            // 
+            this.buttonOK.Location = new System.Drawing.Point(339, 351);
+            this.buttonOK.Name = "buttonOK";
+            this.buttonOK.Size = new System.Drawing.Size(103, 29);
+            this.buttonOK.TabIndex = 0;
+            this.buttonOK.Text = "注册完成";
+            this.buttonOK.UseVisualStyleBackColor = true;
+            this.buttonOK.Click += new System.EventHandler(this.buttonOK_Click);
+            // 
+            // Form2
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.buttonOK);
+            this.Name = "Form2";
             this.Text = "Form2";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button buttonOK;
     }
 }
